@@ -1,0 +1,142 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    color:#555252;
+    font-size: 14px;
+    line-height: 26px;
+    width: 1112px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    display: table;
+    content:"";
+    clear: both;
+}
+.page-nav{
+    padding: 43px 0 111px 0;
+}
+.link-logo{
+    display: inline-block;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #555252;
+}
+.link-logo::first-letter {
+    color: #1abc9c;
+    font-weight: 400;
+}
+.site-navigation{
+    float: right;
+    list-style-type: none;
+    width: 467px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+.site-navigation li{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.site-navigation li:not(:last-child){
+    margin-right: 30px;
+}
+.site-navigation a{
+    color: #0f0101;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: 11px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.site-navigation a:hover,
+.site-navigation a:focus{
+    color: #1abc9c;
+}
+.menu-product-headline{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+}
+.menu-product-list::before{
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 0 auto;
+    margin-bottom: 92px;
+}
+
+.menu-product-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 104px;
+
+}
+
+.menu-product-list a{
+    display: block;
+}
+.menu-product-list-item{
+    margin-bottom: 30px;
+    float:left;
+    width: 254px;
+}
+.menu-product-list-item:not(:nth-child(4n+4)){
+    margin-right: 30px;
+}
+.wrapper-product{
+    width: 255px;
+    height: 322px;
+    background-color:#e9f0fd;
+}
+.wrapper-product-caption{
+    width: 255px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right #323232 90%, #ffffff 10%); */
+    background-color: #323232;
+    text-align: right;
+}
+.wrapper-product-price{
+    width: 54px;
+    height: 40px;
+    background-color: #ffffff;
+    opacity: 0.44;
+    display: inline-block;
+}
+.menu-blog-headline{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+}
+.menu-blog-headline::after{
+    display: block;
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    margin-top: 32px;
+}
+
