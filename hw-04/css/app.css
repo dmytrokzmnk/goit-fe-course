@@ -190,17 +190,14 @@ article:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.menu-blog-post-wrapper-more {
+.menu-blog-post-read-more {
+    display: block;
     width: 159px;
     height: 51px;
     background-color: #4ec6ab;
     border: 0;
     border-radius: 4%/8%;
-
     text-align: center;
-}
-
-.menu-blog-post-read-more {
     text-decoration: none;
     color: #ffffff;
     font-family: "Open Sans";
