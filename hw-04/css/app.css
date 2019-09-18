@@ -43,7 +43,6 @@ body {
     color: #1abc9c;
     font-weight: 400;
 }
-
 .site-navigation {
     float: right;
     list-style-type: none;
@@ -208,8 +207,8 @@ article:not(:last-child) {
     padding: 12px;
 }
 
-.menu-blog-post-wrapper-more:hover,
-.menu-blog-post-wrapper-more:focus {
+.menu-blog-post-read-more:hover,
+.menu-blog-post-read-more:focus {
     background-color: #7fd9c8;
 }
 
@@ -245,10 +244,13 @@ article:not(:last-child) {
     padding: 5px 12px 5px 12px;
 }
 
-.menu-product-list-item-link:hover .caption-product {
+.menu-product-list-item-link:hover .caption-product,
+.menu-product-list-item-link:focus .caption-product {
     background-color: #1abc9c;
 }
 
-.menu-product-list-item-link:hover .price-product {
+.menu-product-list-item-link:hover .price-product,
+.menu-product-list-item-link:focus .price-product
+ {
     background-color: #7fd9c8;
 }
