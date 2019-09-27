@@ -152,7 +152,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-watch.png);
+    background-image: url(../img/icons/icon-watch.png);
     width: 32px;
     height: 32px;
 }
@@ -162,7 +162,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-line-grap.png);
+    background-image: url(../img/icons/icon-line-grap.png);
     width: 32px;
     height: 32px;
 }
@@ -172,7 +172,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-computer.png);
+    background-image: url(../img/icons/icon-computer.png);
     width: 32px;
     height: 32px;
 }
@@ -182,7 +182,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-book.png);
+    background-image: url(../img/icons/icon-book.png);
     width: 32px;
     height: 32px;
 }
@@ -192,7 +192,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-home.png);
+    background-image: url(../img/icons/icon-home.png);
     width: 32px;
     height: 32px;
 }
@@ -202,7 +202,7 @@
     display: inline-block;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/icon-square.png);
+    background-image: url(../img/icons/icon-square.png);
     width: 32px;
     height: 32px;
 }
@@ -384,7 +384,7 @@
     position: absolute;
     width: 13px;
     height: 26px;
-    background-image: url(/img/icons/facebook.svg);
+    background-image: url(../img/icons/facebook.svg);
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -396,7 +396,7 @@
     position: absolute;
     width: 26px;
     height: 22px;
-    background-image: url(/img/icons/twitter.svg);
+    background-image: url(../img/icons/twitter.svg);
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -408,7 +408,7 @@
     position: absolute;
     width: 21px;
     height: 26px;
-    background-image: url(/img/icons/pinterest.svg);
+    background-image: url(../img/icons/pinterest.svg);
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -420,7 +420,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background-image: url(/img/icons/instagram.svg);
+    background-image: url(../img/icons/instagram.svg);
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
@@ -485,6 +485,7 @@ form {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn-subscribe:hover{
     opacity: 0.7;
