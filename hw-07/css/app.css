@@ -1,0 +1,340 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/* great-vibes-regular - latin */
+@font-face {
+    font-family: 'Great Vibes';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Great Vibes'), local('GreatVibes-Regular'),
+         url('../fonts/great-vibes-v7-latin-regular.woff2') format('woff2');/* Chrome 26+, Opera 23+, Firefox 39+ */
+   
+  }
+  /* merriweather-sans-300italic - latin */
+@font-face {
+    font-family: 'Merriweather Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Merriweather Sans Light Italic'), local('MerriweatherSans-LightItalic'),
+         url('../fonts/merriweather-sans-v11-latin-300italic.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  } 
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+         url('../fonts/roboto-slab-v9-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  }
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2');/* Chrome 26+, Opera 23+, Firefox 39+ */
+
+  }
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+.main-header{
+    padding: 44px 0 112px ;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo{
+    color: #fed136;
+    font-size: 50px;
+    font-family: 'Great Vibes';
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+.main-logo:focus{
+    outline: none;
+}
+.main-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    min-width: 485px;
+    justify-content: space-between;
+    margin-top: 6px;
+
+}
+.main-menu--link{
+    color: #222222;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: linear 0.2s;
+}
+.main-menu--link:hover,
+.main-menu--link:focus{
+    color: #fed136;
+    outline: none;
+}
+.services-section{
+    padding-bottom: 120px;
+}
+.services-section--headline{
+    margin: 0;
+    color: #222222;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.services-section--caption{
+    margin: 0;
+    color: #777777;
+    font-family: 'Merriweather Sans';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.services-section--list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 67px;
+}
+.services-section--item-headline{
+    margin: 0;
+    color: #222222;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -0.45px;
+    text-align: center;
+}
+.services-section--item-content{
+    margin: 0;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.35px;
+    text-align: center;
+}
+.services-section--item{
+    position: relative;
+}
+.basket::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -67px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../img/icons/Icon-Basket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.laptop::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -67px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../img/icons/Icon-Laptop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.locked::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -67px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url(../img/icons/Icon-Locked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-section{
+    background: #222222;
+    min-height: 676px;
+    padding: 87px 0 114px;
+    position: relative;
+}
+.contact-section::after{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: url(../img/Map_Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 614px;
+    height: 537px;
+    opacity: 0.3;
+    right: 0;
+    top: 120px;
+}
+
+.contact-section--headline{
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    line-height: 86px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.contact-section--caption{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather Sans';
+    font-style: italic;
+    font-weight: 300;
+    color: #777777;
+    font-size: 16px;
+    margin-bottom: 76px;
+}
+.send-message-form-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.send-message-form-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.send-message-form-list li{
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.send-message-form-list input{
+    width: 455px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: -0.35px;
+    padding: 20px 0 21px 20px;
+}
+.send-message-form-list input[name='email']:valid,
+.send-message-form-list input[name='name']:valid{
+    outline-color: green;
+}
+.send-message-form-list input[name='email']:invalid,
+.send-message-form-list input[name='name']:invalid{
+    outline-color: red;
+}
+.send-message-form-list input::placeholder{
+    color: #bbbbbb;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+}
+.send-message-form-wrapper textarea{
+    width: 455px;
+    height: 210px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    padding: 20px;
+    overflow: auto;
+}
+.send-message-form-wrapper textarea{
+    resize: none;
+}
+.send-message-form-wrapper textarea:valid{
+    outline-color: green;
+}
+.send-message-form-wrapper textarea:invalid{
+    outline-color: red;
+}
+.send-message-form-wrapper textarea::placeholder{
+    color: #bbbbbb;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.35px;
+}
+.send-message-form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    border: 0;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: linear 0.2s;
+}
+.send-message-form-btn:hover,
+.send-message-form-btn:focus{
+    background-color: rgba(254, 209, 54, 0.7);
+    outline: none;
+}
