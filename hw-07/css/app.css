@@ -206,6 +206,7 @@
     min-height: 676px;
     padding: 87px 0 114px;
     position: relative;
+    z-index: 1;
 }
 .contact-section::after{
     content:'';
@@ -219,6 +220,7 @@
     opacity: 0.3;
     right: 0;
     top: 120px;
+    z-index: -1;
 }
 
 .contact-section--headline{
@@ -245,6 +247,7 @@
 .send-message-form-wrapper{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .send-message-form-list{
     list-style: none;
@@ -257,8 +260,8 @@
     padding-right: 30px;
 }
 .send-message-form-list input{
-    width: 455px;
-    height: 50px;
+    min-width: 455px;
+    max-height: 50px;
     border: 1px solid #cccccc;
     border-radius: 2px;
     background-color: #ffffff;
@@ -272,11 +275,13 @@
 }
 .send-message-form-list input[name='email']:valid,
 .send-message-form-list input[name='name']:valid{
-    outline-color: green;
+    outline-color: #009100;
+    /* background-color: #ddffdd; */
 }
 .send-message-form-list input[name='email']:invalid,
 .send-message-form-list input[name='name']:invalid{
-    outline-color: red;
+    outline-color: #ff0000;
+    /* background-color: #ffdddd; */
 }
 .send-message-form-list input::placeholder{
     color: #bbbbbb;
@@ -287,8 +292,8 @@
     letter-spacing: -0.35px;
 }
 .send-message-form-wrapper textarea{
-    width: 455px;
-    height: 210px;
+    min-width: 455px;
+    max-height: 210px;
     border: 1px solid #cccccc;
     border-radius: 2px;
     background-color: #ffffff;
@@ -299,6 +304,7 @@
     letter-spacing: -0.35px;
     padding: 20px;
     overflow: auto;
+    margin-bottom: 30px;
 }
 .send-message-form-wrapper textarea{
     resize: none;
@@ -337,4 +343,5 @@
 .send-message-form-btn:focus{
     background-color: rgba(254, 209, 54, 0.7);
     outline: none;
+    cursor: pointer;
 }
