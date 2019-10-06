@@ -71,6 +71,7 @@ nav{
 }
 .header-title{
     font-size: 30px;
+    line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -83,6 +84,7 @@ nav{
 .header-caption{
     font-family: 'Roboto';
     font-size: 18px;
+    line-height: 1;
     font-weight: 300;
     margin: 0;
     text-align: center;
