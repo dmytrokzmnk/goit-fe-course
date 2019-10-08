@@ -7,25 +7,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/* HEADER */
 .container{
     min-width: 320px;
-    max-width: 767px;
     margin: 0 auto;
 }
-/* HEADER */
+
 header{
     width: 100vw;
-    height: 540px;
     background-color: rgb(26, 25, 21);
     color: #ffffff;
-}
-nav{
-    text-align: center;
 }
 .bg-mood{
     width: 100%;
     height: 100%;
-    background-image: url(../img/bgi-desktop.png);
+    background-image: url(../img/bgi-phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -40,14 +36,11 @@ nav{
     letter-spacing: 1px;
     text-decoration: none;
     display: block;
-    padding-bottom: 38px;
 }
 .header-menu{
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 115px;
 }
 .header-menu--item{
     width: 90px;
@@ -80,7 +73,6 @@ nav{
 }
 .header-title span{
     display: block;
-    padding-bottom: 19px;
 }
 .header-caption{
     font-family: 'Roboto';
@@ -89,10 +81,6 @@ nav{
     font-weight: 300;
     margin: 0;
     text-align: center;
-}
-.header-caption span{
-    display: block;
-    padding-bottom: 19px;
 }
 .header-link--search{
     display: block;
@@ -109,10 +97,7 @@ nav{
     margin: 0 auto;
 }
 /* MAIN */
-main{
-    padding-top: 69px;
-    padding-bottom: 57px;
-}
+
 .main-title{
     color: #333333;
     font-size: 22px;
@@ -253,7 +238,6 @@ main{
     margin: 0;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 16px;
 }
 .main-list---link-info{
     margin: 0;
@@ -261,11 +245,9 @@ main{
     font-family: 'Roboto';
     font-weight: 300;
     text-align: center;
-    padding-bottom: 29px;
 }
 .main-btn{
     display: block;
-    width: 280px;
     height: 40px;
     border: 2px solid #ff4e50;
     border-radius: 20px;
