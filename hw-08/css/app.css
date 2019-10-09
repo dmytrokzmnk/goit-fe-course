@@ -1,5 +1,5 @@
 *,
-*::bedore,
+*::before,
 *::after{
     box-sizing: border-box;
 }
@@ -9,12 +9,12 @@ body{
 }
 /* HEADER */
 .container{
-    min-width: 320px;
+    width: 320px;
     margin: 0 auto;
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     background-color: rgb(26, 25, 21);
     color: #ffffff;
 }
@@ -137,14 +137,13 @@ header{
 }
 .main-list--wrapper-img{
     margin: 0 auto;
-    padding-bottom: 20px;
     display: block;
     width: 120px;
     height: 120px;
-    border: 50%;
-    overflow: hidden;
     position: relative;
 }
+
+
 .tv::after{
     content: '';
     border: 4px solid rgb(255, 255, 255);
@@ -165,8 +164,8 @@ header{
     background-image: url(../img/icons/icon-tv.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 14px;
-    bottom: 14px;
+    right: 10px;
+    bottom: 11px;
     z-index: 2;
 }
 .coffee::after{
@@ -189,8 +188,8 @@ header{
     background-image: url(../img/icons/coffee.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 14px;
-    bottom: 14px;
+    right: 10px;
+    bottom: 10px;
     z-index: 2;
 }
 .chemistry::after{
@@ -213,8 +212,8 @@ header{
     background-image: url(../img/icons/chemistry.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 15px;
-    bottom: 13px;
+    right: 11px;
+    bottom: 10px;
     z-index: 2;
 }
 .airplane::after{
@@ -237,8 +236,8 @@ header{
     background-image: url(../img/icons/airplane.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 15px;
-    bottom: 13px;
+    right: 11px;
+    bottom: 9px;
     z-index: 2;
 }
 .main-list---link-name{
