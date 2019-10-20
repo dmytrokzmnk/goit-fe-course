@@ -375,8 +375,7 @@ a:hover {
 
     .main-list--item {
         max-width: 236px;
-        margin-left: -5px;
-        margin-right: -5px;
+        margin: 0 auto;
     }
 
     .main-list--link-info {
