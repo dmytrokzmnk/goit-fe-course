@@ -1,0 +1,476 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 540px;
+    background-color: rgb(26, 25, 21);
+    color: #ffffff;
+}
+
+.bg-mood {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bgi-phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-nav {
+    padding-top: 20px;
+}
+
+.header-logo {
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.header-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 115px;
+
+}
+
+.header-menu--item {
+    width: 90px;
+    height: 36px;
+    text-align: center;
+    font-size: 0;
+
+}
+
+.header-menu--link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    border-radius: 18px;
+    transition: border linear 0.2s;
+}
+
+.header-menu--link:hover,
+.header-menu--link:focus {
+    border: 2px solid #ffffff;
+
+}
+
+.header-title {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.header-title span {
+    display: block;
+    padding-bottom: 19px;
+}
+
+.header-caption {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+
+}
+
+.header-caption span {
+    display: block;
+    padding-bottom: 19px;
+}
+
+.header-link--search {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 280px;
+    height: 40px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* MAIN */
+main {
+    padding-top: 69px;
+    padding-bottom: 57px;
+}
+
+.main-title {
+    color: #333333;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.main-list--item {
+    max-width: 220px;
+    margin: 0 auto;
+
+}
+
+.main-list--link {
+    display: block;
+    width: inherit;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.main-list--link-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-list--wrapper-img {
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.tv::after {
+    content: '';
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(255, 78, 80);
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.tv::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/icon-tv.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 10px;
+    bottom: 11px;
+    z-index: 2;
+}
+
+.coffee::after {
+    content: '';
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: #1cd7ad;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.coffee::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 17px;
+    background-image: url(../img/icons/coffee.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.chemistry::after {
+    content: '';
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: #ffa507;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.chemistry::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    background-image: url(../img/icons/chemistry.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 11px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+.airplane::after {
+    content: '';
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: #4e73db;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.airplane::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 16px;
+    background-image: url(../img/icons/airplane.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 11px;
+    bottom: 9px;
+    z-index: 2;
+}
+
+.main-list--link-name {
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main-list--link-info {
+    margin: 0;
+    color: #666666;
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 29px;
+    color: #333333;
+}
+
+.main-btn {
+    display: block;
+    height: 40px;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #ff4e50;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 280px;
+}
+
+a:hover {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-btn:hover {
+    color: #ff4e50;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* HEADER */
+    header {
+        height: 700px;
+    }
+
+    .bg-mood {
+        background-image: url(../img/bgi-desktop.png);
+    }
+
+    .main-nav {
+        padding-top: 38px;
+        padding-bottom: 160px;
+
+    }
+
+    .header-logo {
+        padding: 0;
+
+    }
+
+    .header-menu {
+        padding: 0;
+    }
+
+    .header-title {
+        font-size: 52px;
+    }
+
+    .header-title span {
+        padding-bottom: 40px;
+    }
+
+    .header-caption span {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+
+    .header-caption {
+        padding-bottom: 34px;
+    }
+
+    .header-link--search {
+        width: 226px;
+    }
+
+    /* MAIN */
+    main {
+        padding-top: 72px;
+        padding-bottom: 40px;
+    }
+
+    .main-title {
+        padding-bottom: 32px;
+    }
+
+    .main-list--item {
+        max-width: 236px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .main-list--link-info {
+        padding-bottom: 0;
+    }
+
+    .main-btn {
+        width: 193px;
+    }
+
+    .mb-59 {
+        margin-bottom: 59px;
+    }
+
+    .mb-39 {
+        margin-bottom: 39px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    /* HEADER */
+
+    header {
+        height: 700px;
+    }
+
+    .container {
+        max-width: 940px;
+    }
+
+    .main-nav {
+        padding-top: 38px;
+        padding-bottom: 160px;
+
+    }
+
+    .bg-mood {
+        background-image: url(../img/bgi-desktop.png);
+    }
+
+    .header-logo {
+        padding: 0;
+        text-align: left;
+    }
+
+    .header-menu {
+        padding: 0;
+    }
+
+    .header-title {
+        font-size: 52px;
+    }
+
+    .header-title span {
+        padding-bottom: 40px;
+    }
+
+    .header-caption span {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+
+    .header-caption {
+        padding-bottom: 35px;
+    }
+
+    .header-link--search {
+        width: 225px;
+    }
+
+    /* MAIN */
+    main {
+        padding-top: 70px;
+        padding-bottom: 73px;
+    }
+
+    .main-title {
+        padding-bottom: 33px;
+    }
+
+    .main-list--link-info {
+        padding-bottom: 0;
+    }
+
+    .main-list--item {
+        max-width: 222px;
+        margin-bottom: 39px;
+        margin-left: -5px;
+        margin-right: -5px;
+
+    }
+
+    .main-btn {
+        width: 192px;
+    }
+}
