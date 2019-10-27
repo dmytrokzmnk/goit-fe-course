@@ -4,17 +4,6 @@
     box-sizing: border-box;
 }
 
-.visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-}
 a:hover{
     text-decoration: none;
     color: inherit;
@@ -23,14 +12,26 @@ a:hover{
     text-decoration: none;
     display: block;
 }
-.page-header {
-    padding-top: 28px;
-    min-height: 86px;
-    background-color: transparent;
-    color: #fff;
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.title{
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+}
+.text{
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
 }
 
-.page-header-img{
+.screen-img{
     background-image: url(../img/eagle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,17 +39,22 @@ a:hover{
     max-width: 100%;
     height: 1000px;
     margin: 0 auto;
-    margin-bottom: 46px;
- 
 }
-.page-header-grdnt{
+.header-screen-img{
+    margin-bottom: 24px;
+}
+.screen-gradient{
     background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%);
     width: 100%;
-    height: 1000px;
+    height: 100%;
+}
+.page-header {
+    padding-top: 28px;
+    height: 86px;
+    background-color: transparent;
+    color: #fff;
 }
 .page-nav{
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 178px;
 }
 
@@ -56,32 +62,24 @@ a:hover{
     color: #ffffff;
     font-family: 'Montserrat';
     font-size: 30px;
+    line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.site-logo span {
+.site-logo--lowercase{
     text-transform: lowercase;
 }
 
 .site-navigation{
-    padding: 0;
-    margin: 0;
     width: 620px;
-    list-style: none;
-}
-.site-navigation__item{
-    border-bottom: 3px solid transparent;
-    transition: border linear 0.2s;
 }
 .site-navigation__item:nth-last-child(-n+2){
-    padding-top: 4px;
+    margin-top: -3px;
 }
 .site-navigation__link{
-    width: 100%;
-    height: 100%;
-    padding: 12px 12px 12px;
+    padding: 12px 0;
     color: #ffffff;
     font-family: 'Montserrat';
     font-size: 14px;
@@ -89,191 +87,140 @@ a:hover{
     font-weight: 400;
     text-transform: uppercase;
     transition: linear 0.2s;
-}
-.site-navigation__item:hover .site-navigation__link ,
-.site-navigation__link:focus  {
-    color: #fce38a;
+    border-bottom: 3px solid transparent;
     
 }
-.site-navigation__item:not(:nth-last-child(-n+2)):hover,
-.site-navigation__link:focus .site-navigation__item{
+
+.site-navigation__link--hover:hover,
+.site-navigation__link--hover:focus  {
+    color: #fce38a;
+}
+.site-navigation__link--hover-border:hover,
+.site-navigation__link--hover-border:focus{
     border-bottom: 3px solid #fce38a;
 }
-.site-navigation svg{
+.site-navigation__icon{
     fill: #fff;
     width: 18px;
     height: 18px;
     transition: linear 0.2s;
 }
-.site-navigation__link:hover svg,
-.site-navigation__link:focus svg{
+.site-navigation__icon:hover ,
+.site-navigation__icon:focus{
     fill: #fce38a;
  
 }
-.page-header_title{
-    color: #ffffff;
-    font-family: "Kaushan Script";
-    font-size: 72px;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
- 
-}
-.page-header_title span{
-    display: block;
-    font-family: Montserrat;
-    font-size: 150px;
-    font-weight: 700;
-    line-height: 140px;
-    text-transform: uppercase;
-    padding-top: 42px;
-    padding-bottom: 124px;
-}
-.page-header__link{
-    max-width: 166px;
-    display: block;
-
-    margin: 0 auto;
-    color: #ffffff;
-    font-family: Montserrat;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 12px 29px 11px 30px;
-    border: 3px solid #ffffff;
-}
-
-.section-sevice {
-    padding-bottom: 87px;
-}
-
-.section-sevice__title {
-    padding: 0;
-    margin: 0;
-    text-align: center;
+.section-title{
     color: #333333;
     font-family: "Kaushan Script";
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 69px;
 
 }
+.section-title--white-big{
+    color: #ffffff;
+    font-size: 72px;
+}
 
-.section-sevice__title span {
+.section-title__indent{
     display: block;
-    color: #333333;
-    font-family: 'Montserrat';
+    line-height: 1;
+    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
-    line-height: 74px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+}
+.section-title__indent--big{
+    color: inherit;
+    font-size: 150px;
+}
+.page-header__title{
+    margin-bottom: 124px;
 }
 
-.section-sevice__title::after {
+.custom-btn{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 32px 14px 33px;
+    border: 3px solid transparent;
+}
+.custom-btn--border-white{
+    border: 3px solid #ffffff;
+    background-color: transparent;
+}
+
+.section-services {
+    margin-bottom: 87px;
+}
+
+.section-services__title {
+    margin-bottom: 111px;
+    line-height: 68px;
+}
+
+
+.section-title--underline::after {
     content: '';
+    position: absolute;
     display: block;
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 0 auto;
+    bottom: -42px;
+    right: 0;
+    left: 0;
+    margin: auto;
 
 }
 
-.section-sevice__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    min-height: 240px;
-}
-
-.section-sevice__item svg{
+.block-services__icon{
     width: 32px;
     height: 32px;
-    fill: #95e1d3;;
+    fill: #95e1d3;
+    margin: 8px 29px 0 22px;
 }
 
-.mb-100:not(:nth-last-child(-n+3)) {
-    margin-bottom: 100px;
+.row .block-services:not(:nth-last-child(-n+3)){
+    margin-bottom: 101px;
 }
 
-.section-sevice__item-headline {
+.block-services__title {
     margin: 0;
-    display: inline-block;
     color: #333333;
     font-family: 'Montserrat';
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
+
+}
+.section-services__paragraph{
+    margin-bottom: 13px;
 }
 
-.section-sevice__item-content {
-    margin: 0;
-    color: #999999;
-    font-family: 'Roboto';
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
+.block-services__text {
+    
 }  
 .section-team{
     padding-bottom: 82px;  
 }
 
 .section-team__title {
-    margin: 0;
-    text-align: center;
-    color: #333333;
-    font-family: "Kaushan Script";
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 49px;
+    margin-bottom: 90px;
+    line-height: 68px;
 }
-
-.section-team__title span {
-    display: block;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 74px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-
-}
-
-.section-team__title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #f38181;
-    margin: 0 auto;
-}
-
 .section-team__text {
-    margin: 0;
-    width: 941px;
-    height: 39px;
-    color: #999999;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
     text-align: center;
-    margin: 0 auto;
-
     padding-bottom: 92px;
-
 }
 
 .section-team__item {
     width: 380px;
-    margin: 0;
-    padding: 0;
+
 }
 
 .section-team__name {
@@ -322,7 +269,6 @@ a:hover{
     background: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     z-index: 2;
     transition: linear 0.2s;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,9 +298,6 @@ a:hover{
 } */
 
 .social {
-    padding: 0;
-    margin: 0;
-    list-style: none;
     display: flex;
 }
 
@@ -403,7 +346,7 @@ a:hover{
 
 
 .page-footer {
-    min-height: 64px;
+    height: 64px;
     position: relative;
 }
 
@@ -433,7 +376,6 @@ a:hover{
     position: absolute;
     background-color: rgb(229, 229, 229);
     width: 1200px;
-    ;
     height: 1px;
     position: absolute;
     top: -1px;
@@ -471,12 +413,14 @@ a:hover{
     text-transform: uppercase;
     cursor: pointer;
 }
-.ml-20{
-    margin-left: -20px;
-}
+
 
 
 @media (min-width:1220px){
+    .row{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     .col,
     [class*="col-"] {
       padding-right: 10px;
@@ -484,9 +428,8 @@ a:hover{
     }
     .container {
         max-width: 1200px;
-        padding-left: 10px;
         padding-right: 10px;
-
+        padding-left: 10px;
     }
     
 }
