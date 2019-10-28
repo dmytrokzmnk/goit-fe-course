@@ -1,8 +1,3 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 a:hover {
     text-decoration: none;
@@ -63,7 +58,7 @@ a:hover {
 }
 
 .page-nav {
-    margin-bottom: 178px;
+    margin-bottom: 160px;
 }
 
 .site-logo {
@@ -96,6 +91,8 @@ a:hover {
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     border-bottom: 3px solid transparent;
 
@@ -115,6 +112,8 @@ a:hover {
     fill: #fff;
     width: 18px;
     height: 18px;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 }
 
@@ -152,7 +151,7 @@ a:hover {
 }
 
 .page-header__title {
-    margin-bottom: 124px;
+    margin-bottom: 129px;
 }
 
 .custom-btn {
@@ -162,12 +161,13 @@ a:hover {
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 15px 34px 14px 34px;
+    padding: 12px 31px 12px 31px;
     border: 3px solid transparent;
     cursor: pointer;
 }
 
 .custom-btn--border-white {
+    padding: 10px 27px 10px;
     border: 3px solid #ffffff;
     background-color: transparent;
 }
@@ -243,6 +243,8 @@ a:hover {
 .team-card__bgc {
     background-color: transparent;
     margin-bottom: 31px;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     width: 380px;
     height: 470px;
@@ -251,6 +253,8 @@ a:hover {
 .team-card__img {
     position: absolute;
     z-index: 1;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     display: block;
 }
@@ -258,8 +262,12 @@ a:hover {
 .team-card__gradient {
     position: absolute;
     opacity: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+    background: -o-linear-gradient(left, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     background: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     z-index: 2;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     width: 380px;
     height: 470px;
@@ -272,7 +280,9 @@ a:hover {
 
 .team-card__bgc--hover-translete:hover .team-card__img,
 .team-card__bgc--hover-translete:hover .team-card__gradient {
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
 
 }
 
@@ -288,6 +298,8 @@ a:hover {
     width: 56px;
     height: 56px;
     background-color: #fce38a;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 
 }
@@ -318,6 +330,8 @@ a:hover {
     height: 26px;
     width: 26px;
     fill: #f38181;
+    -webkit-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 }
 
@@ -370,12 +384,52 @@ a:hover {
 }
 
 .page-footer__emeil {
-    padding: 14px 54px 13px 13px;
+    padding: 11px 54px 11px 13px;
     border: 1px solid #e7e7e7;
     color: #333333;
     font-family: "Roboto";
     font-size: 15px;
     font-weight: 400;
+
+}
+
+.page-footer__emeil--placeholder::-webkit-input-placeholder {
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    font-style: italic;
+
+}
+
+.page-footer__emeil--placeholder::-moz-placeholder {
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    font-style: italic;
+
+}
+
+.page-footer__emeil--placeholder:-ms-input-placeholder {
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    font-style: italic;
+
+}
+
+.page-footer__emeil--placeholder::-ms-input-placeholder {
+    color: #cccccc;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    font-style: italic;
 
 }
 
