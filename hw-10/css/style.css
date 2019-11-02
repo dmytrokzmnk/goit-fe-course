@@ -1,7 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 a:hover {
     text-decoration: none;
     color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .link {
@@ -30,18 +40,42 @@ a:hover {
     margin: 0;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.position-relative {
+    position: relative;
+}
+
 .screen-img {
     background-image: url(../img/eagle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    max-width: 100%;
+    width: 100%;
     height: 1000px;
     margin: 0 auto;
 }
 
 .header-screen-img {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .screen-gradient {
@@ -52,13 +86,12 @@ a:hover {
 
 .page-header {
     padding-top: 28px;
-    height: 86px;
     background-color: transparent;
     color: #fff;
 }
 
 .page-nav {
-    margin-bottom: 160px;
+    margin-bottom: 114px;
 }
 
 .site-logo {
@@ -91,8 +124,6 @@ a:hover {
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     border-bottom: 3px solid transparent;
 
@@ -112,13 +143,11 @@ a:hover {
     fill: #fff;
     width: 18px;
     height: 18px;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 }
 
 .site-navigation__icon--hover-yellow:hover,
-.site-navigation__link:focus .site-navigation__icon--hover-yellow  {
+.site-navigation__link:focus .site-navigation__icon--hover-yellow {
     fill: #fce38a;
 
 }
@@ -134,10 +163,12 @@ a:hover {
 .section-title--white-big {
     color: #ffffff;
     font-size: 72px;
+    line-height: 156px;
 }
 
 .section-title__indent {
     display: block;
+    text-align: center;
     line-height: 1;
     font-family: Montserrat;
     font-size: 30px;
@@ -151,34 +182,36 @@ a:hover {
 }
 
 .page-header__title {
-    margin-bottom: 129px;
+    margin-bottom: 91px;
 }
 
 .custom-btn {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 14px;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 12px 31px 12px 31px;
+    padding: 10px 26px 10px 29px;
     border: 3px solid transparent;
     cursor: pointer;
+
 }
 
 .custom-btn--border-white {
-    padding: 10px 27px 10px;
     border: 3px solid #ffffff;
     background-color: transparent;
 }
 
 .section-services {
-    margin-bottom: 87px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 68px;
 }
 
 .section-services__title {
-    margin-bottom: 111px;
-    line-height: 68px;
+    margin-bottom: 105px;
+    line-height: 66px;
 }
 
 
@@ -196,15 +229,19 @@ a:hover {
 
 }
 
+.block-services {
+    flex-basis: 383px;
+}
+
 .block-services__icon {
     width: 32px;
     height: 32px;
     fill: #95e1d3;
-    margin: 2px 29px 0 22px;
+    margin: 2px 29px 0 21px;
 }
 
-.row .block-services:not(:nth-last-child(-n+3)) {
-    margin-bottom: 101px;
+.block-services:not(:nth-last-child(-n+3)) {
+    margin-bottom: 95px;
 }
 
 .block-title {
@@ -227,13 +264,14 @@ a:hover {
 }
 
 .section-team__title {
-    margin-bottom: 90px;
-    line-height: 68px;
+    margin-bottom: 80px;
+    line-height: 62px;
 }
 
 .section-team__text {
     text-align: center;
-    padding-bottom: 88px;
+    padding: 0 124px 92px;
+
 }
 
 .team-card {
@@ -242,9 +280,7 @@ a:hover {
 
 .team-card__bgc {
     background-color: transparent;
-    margin-bottom: 31px;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
+    margin-bottom: 24px;
     transition: linear 0.2s;
     width: 380px;
     height: 470px;
@@ -253,8 +289,6 @@ a:hover {
 .team-card__img {
     position: absolute;
     z-index: 1;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     display: block;
 }
@@ -262,12 +296,8 @@ a:hover {
 .team-card__gradient {
     position: absolute;
     opacity: 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
-    background: -o-linear-gradient(left, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     background: linear-gradient(90deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     z-index: 2;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
     width: 380px;
     height: 470px;
@@ -280,15 +310,13 @@ a:hover {
 
 .team-card__bgc--hover-translete:hover .team-card__img,
 .team-card__bgc--hover-translete:hover .team-card__gradient {
-    -webkit-transform: translate(-10px, -10px);
-        -ms-transform: translate(-10px, -10px);
-            transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
 
 }
 
 .team-card__bgc--hover-visible:hover .team-card__gradient {
     opacity: 1;
-  
+
 }
 
 
@@ -298,8 +326,6 @@ a:hover {
     width: 56px;
     height: 56px;
     background-color: #fce38a;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 
 }
@@ -330,8 +356,6 @@ a:hover {
     height: 26px;
     width: 26px;
     fill: #f38181;
-    -webkit-transition: linear 0.2s;
-    -o-transition: linear 0.2s;
     transition: linear 0.2s;
 }
 
@@ -341,19 +365,20 @@ a:hover {
 
 .team-card-name {
     text-align: center;
-
+    text-transform: uppercase;
+    line-height: 29px;
 }
 
 .team-card-name__function {
     display: block;
     font-style: italic;
     font-weight: 300;
-    padding-top: 15px;
+    text-transform: none;
 }
 
 
 .page-footer {
-    height: 64px;
+    height: 60px;
 
 }
 
@@ -378,58 +403,14 @@ a:hover {
 
 }
 
-.page-footer__form {
-    padding-top: 10px;
-    padding-bottom: 11px;
-}
 
 .page-footer__emeil {
-    padding: 11px 54px 11px 13px;
+    padding: 10px 54px 10px 15px;
     border: 1px solid #e7e7e7;
     color: #333333;
     font-family: "Roboto";
     font-size: 15px;
     font-weight: 400;
-
-}
-
-.page-footer__emeil--placeholder::-webkit-input-placeholder {
-    color: #cccccc;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1;
-    font-style: italic;
-
-}
-
-.page-footer__emeil--placeholder::-moz-placeholder {
-    color: #cccccc;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1;
-    font-style: italic;
-
-}
-
-.page-footer__emeil--placeholder:-ms-input-placeholder {
-    color: #cccccc;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1;
-    font-style: italic;
-
-}
-
-.page-footer__emeil--placeholder::-ms-input-placeholder {
-    color: #cccccc;
-    font-family: "Roboto";
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1;
-    font-style: italic;
 
 }
 
@@ -442,28 +423,8 @@ a:hover {
     font-style: italic;
 
 }
+
 .custom-btn--turquoise {
     background-color: #95e1d3;
     border-color: #95e1d3;
-}
-
-
-@media (min-width:1220px) {
-    .row {
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-
-    .col,
-    [class*="col-"] {
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
-    .container {
-        max-width: 1200px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-
 }
