@@ -1,0 +1,16 @@
+
+.site-logo {
+    @extend %link;
+    color: $primary-white-color;
+    font-family: $main-font-stack;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &--lowercase {
+        text-transform: lowercase;
+    }
+}
+

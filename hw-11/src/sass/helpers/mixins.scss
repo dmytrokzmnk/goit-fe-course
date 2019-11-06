@@ -1,0 +1,23 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+@mixin flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin center-flex($type: 'all'){
+    display: flex;
+    @if $type== 'all' {
+        justify-content: center;
+        align-items: center;
+    }@else if $type== 'hor' {
+        justify-content: center;
+    }@else if $type== 'ver' {
+        align-items: center;
+    }
+    @else if $type== 'between' {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,29 @@
+%link {
+    text-decoration: none;
+    display: block;
+}
+
+%title {
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+%text {
+    color: $secondary-dark-color;
+    font-family: $second-font-stack;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+%position-relative {
+    position: relative;
+}

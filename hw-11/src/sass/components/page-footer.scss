@@ -1,0 +1,46 @@
+.page-footer {
+    @extend %position-relative;
+    @include center-flex('ver');
+    @include center-flex('between');
+    height: 60px;
+
+    &--topline-grey::before {
+        @include pseudo;
+        background-color: $underline-grey-color;
+        width: 1200px;
+        height: 1px;
+        position: absolute;
+        top: -1px;
+        left: 0;
+    
+    }
+}
+
+.page-footer__description {
+    text-transform: none;
+}
+
+.page-footer__created-name {
+    color: $primary-coral-color;
+}
+.page-footer__form{
+    @include flexbox;
+}
+.page-footer__emeil {
+    padding: 10px 54px 10px 15px;
+    border: 1px solid $underline-grey-color;
+    color: $primary-dark-color;
+    font-family:$second-font-stack;
+    font-size: 15px;
+    font-weight: 400;
+
+    &--placeholder::placeholder {
+        color: $placeholder-grey-color;
+        font-family: $second-font-stack;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1;
+        font-style: italic;
+    
+    }
+}

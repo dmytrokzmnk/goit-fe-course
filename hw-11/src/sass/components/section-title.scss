@@ -1,0 +1,42 @@
+.section-title {
+    color: $primary-dark-color;
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+    @extend %title;
+
+    
+    &--underline::after {
+        @include pseudo;
+        width: 60px;
+        height: 3px;
+        background-color:$primary-coral-color;
+        bottom: -42px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    
+    }
+
+}
+
+.section-title--white-big {
+    color: $primary-white-color;
+    font-size: 72px;
+    line-height: 156px;
+}
+
+.section-title__indent {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title__indent--big {
+    color: inherit;
+    font-size: 150px;
+}

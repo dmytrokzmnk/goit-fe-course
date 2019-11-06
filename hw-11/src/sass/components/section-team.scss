@@ -1,0 +1,17 @@
+.section-team {
+    margin-bottom: 82px;
+}
+
+.section-team__title {
+    margin-bottom: 80px;
+    line-height: 62px;
+    @extend %title;
+    @extend %position-relative;
+}
+
+.section-team__text {
+    text-align: center;
+    padding: 0 124px 92px;
+    @extend %text;
+
+}

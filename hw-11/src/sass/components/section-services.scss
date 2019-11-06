@@ -1,0 +1,14 @@
+.section-services {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 68px;
+}
+
+.section-services__title {
+    @extend %title;
+    @extend %position-relative;
+    margin-bottom: 105px;
+    line-height: 66px;
+
+}
+

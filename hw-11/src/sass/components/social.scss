@@ -1,0 +1,41 @@
+.social{
+    @extend %list;
+    @include flexbox;
+}
+.social__item{
+    @extend %position-relative;
+    &--column-border::after {
+        @include pseudo;
+        background-color: $primary-coral-color;
+        opacity: 0.502;
+        width: 1px;
+        height: 56px;
+        top: 0;
+        right: 0;
+    }
+}
+.social__link {
+    @extend %link;
+    @include center-flex('all');
+    opacity: 0;
+    width: 56px;
+    height: 56px;
+    background-color:$primary-yellow-color;
+    transition: linear 0.2s;
+  
+    &--hover-orange:hover {
+        background-color:$primary-coral-color;
+    }
+    &--hover-orange:hover .social__icon {
+        fill:$primary-white-color;
+    }
+    
+}
+
+.social__icon {
+    display: block;
+    height: 26px;
+    width: 26px;
+    fill: $primary-coral-color;
+    transition: linear 0.2s;
+}
