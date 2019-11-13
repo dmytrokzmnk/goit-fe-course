@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Gilroy Black Italic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Gilroy-BlackItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Semibold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Gilroy-SemiBold.woff') format('woff');
+}
