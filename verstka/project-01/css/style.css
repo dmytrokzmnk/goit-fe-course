@@ -50,7 +50,7 @@ body{
     box-shadow: 32px 28px 90px rgba(18, 46, 101, 0.28);
     backdrop-filter: blur(28px);
     position: absolute;
-    right: -200px;
+    left: 93.33333%;
 }
 
 .bank-card p{
@@ -307,7 +307,7 @@ body{
     background-size: contain;
 }
 .money-block{
-    max-width: 82.6666%;
+    width: 311px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 68px;
@@ -356,7 +356,7 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
-    max-width: 375px;
+    width: 311px;
     margin: 0 auto;
     justify-content: space-around;
 }
@@ -376,29 +376,14 @@ body{
 .page-nav__img-pressed{
     display: none;
 }
-.page-nav__link:active .page-nav__img-pressed{
-    display: block;
-}
-.page-nav__link:active .page-nav__img-default{
-    display: none;
-}
+
 .page-nav__item{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.page-nav__item--pressed:active{
-    border-radius: 18px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(-30deg, rgba(255, 255, 255, 0.8) 20%, rgba(55, 83, 111, 0.6) 60%);
-    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48), inset -3px -3px 7px #FFFFFF;
-}
-.page-nav__link--pressed:active{
-    width: 56px;
-    height: 56px;
-    background: rgba(227, 237, 247, 0.6);
-    border-radius: 16px;
+    background-color: transparent;
 }
 
 .page-nav__item--pressed-active{
@@ -414,9 +399,7 @@ body{
     background: rgba(227, 237, 247, 0.6);
     border-radius: 16px;
 }
-.page-nav__link--default:active .page-nav__link--pressed{
-    display: none;
-}
+
 
 .db{
     display: block
