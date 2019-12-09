@@ -381,7 +381,6 @@ body {
     margin: auto;
 }
 .home::after {
-    
     background-image: url(../img/icons/home.svg);
 }
 .page-nav__link--pressed:active .home::after{
@@ -393,12 +392,6 @@ body {
 .page-nav__link--pressed:active .new::after{
     background-image: url(../img/icons/new-pressed.svg);
 }
-.cards::after {
-    background-image: url(../img/icons/cards-pressed.svg);
-}
-/* .page-nav__link--pressed:active .cards::after{
-    background-image: url(../img/icons/cards-pressed.svg);
-} */
 .settings::after {
     background-image: url(../img/icons/settings.svg);
 }
